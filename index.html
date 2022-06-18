@@ -189,9 +189,9 @@ opacity:0.7;
 
     </style>
 <script>
-window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Page Caching Started!!";};
+window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="بدأ تحميل الكاش!!";};
 window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
-window.applicationCache.oncached=function(e){document.getElementById("progress").innerHTML="Page Cached Successfully!!";setTimeout(function(){document.getElementById("progress").innerHTML="Reopen the Page !!"; }, 1500);localStorage.cachedG="yes";};
+window.applicationCache.oncached=function(e){document.getElementById("progress").innerHTML="تم تحميل الكاش!!";setTimeout(function(){document.getElementById("progress").innerHTML="أعد فتح المتصفح !!"; }, 1500);localStorage.cachedG="yes";};
 </script>
 <meta charset="utf-8">
 <title>دوس اكس  تعديل سوفت 9.00</title>
