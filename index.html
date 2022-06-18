@@ -892,7 +892,7 @@ function kernel() {
    }
   }
   chain.run(); 
-  alert("\n\n??ادخل الفلاشة دلوقت واستنى شوية\n\n??اضغط موافق عند ظهور اشعار اعلى الشاشة\n\n??");
+  alert("\n\nادخل الفلاشة دلوقت واستنى شوية\n\nاضغط موافق عند ظهور اشعار اعلى الشاشة\n\n");
   {
    for (var i = 1; i < NUM_KQUEUES; i += 2) {
     chain.fcall(window.syscalls[6], kqueues[i]);
@@ -916,7 +916,7 @@ function kernel() {
             chain.fcall(patch_buffer, p.read8(KERNEL_BASE_PTR));
             chain.fcall(window.syscalls[73], patch_buffer, 0x4000);
             chain.run();
-            alert("تم التعديل\n\n??انزع الفلاشة\n\n??");
+            alert("تم التعديل\n\nانزع الفلاشة\n\n");
             setTimeout(jbdone, 50);
         }
         else
